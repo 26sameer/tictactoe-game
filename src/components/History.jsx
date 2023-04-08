@@ -6,7 +6,9 @@ const History = ({ history, moveTo, currentMove }) => {
           return (
             <li key={index}>
               <button
-                className={`btn-move ${currentMove === index ? 'active' : ''}`}
+                className={`button btn-move ${
+                  currentMove === index ? 'active' : ''
+                }`}
                 type="button"
                 onClick={() => moveTo(index)}
               >
